@@ -1,0 +1,499 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link href="./src/css/main.css" rel="stylesheet">
+    <style type="text/css">
+      a {
+        color: #1772d0;
+        text-decoration:none;
+      }
+      a:focus, a:hover {
+        color: #f09228;
+        text-decoration:none;
+      }
+      body,td,th {
+        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 400
+      }
+      heading {
+        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+        font-size: 19px;
+        font-weight: 1000
+      }
+      strong {
+        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+        font-size: 16px;
+        font-weight: 800
+      }
+      strongred {
+        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+        color: 'red' ;
+        font-size: 16px
+      }
+      sectionheading {
+        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+        font-size: 22px;
+        font-weight: 600
+      }
+      subheading {
+        font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+        font-size: 18px;
+        font-weight: 600
+      }
+      #cscourses1 {
+        margin-bottom: 0px;
+      }
+      #cscourses2 {
+        margin-top: 0px;
+      }
+      #mooc td {
+        width: 50%;
+      }
+      .tgl input[type=checkbox] {
+          box-sizing: border-box;
+          visibility: hidden;
+          height: inherit;
+          display: none;
+      }
+      label.tggl {
+          box-sizing: border-box;
+          display: flex;
+          width: 48px;
+          height: 23px;
+          border: 4px solid;
+          border-radius: 99em;
+          position: relative;
+          transition: transform 0.75s ease-in-out;
+          transform-origin: 50% 50%;
+          cursor: pointer;
+      }
+      label.tggl:before {
+          transition: transform 0.75s ease;
+          transition-delay: 0.5s;
+          content: "";
+          display: block;
+          position: absolute;
+          width: 11px;
+          height: 11px;
+          background-color: #000;
+          border-radius: 50%;
+          top: 2px;
+          left: 3px;
+      }
+      .tgl input[type=checkbox]:checked + label {
+          transform: rotate(360deg);
+          background-color: #000;
+      }
+      .tgl input[type=checkbox]:checked + label:before {
+          box-sizing: border-box;
+          transform: translateX(24px);
+          background-color: #fff;
+      }
+      .hidden {
+        display:none;
+        transition: 1.2s;
+      }
+    </style>
+
+    <title>Aneesh Khunteta</title>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97059392-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'UA-97059392-1');
+    </script>
+    <script>
+      function extracurricularClick(checkbox) {
+        var acads = document.querySelectorAll(".acads");
+        var extra = document.querySelectorAll(".extra");
+        if (checkbox.checked == true) {
+            acads.forEach(x => x.classList.add("hidden"));
+            extra.forEach(x => x.classList.remove("hidden"));
+        } else {
+            acads.forEach(x => x.classList.remove("hidden"));
+            extra.forEach(x => x.classList.add("hidden"));
+        }
+      }
+    </script>
+
+    <meta name="Aneesh Khunteta&#39;s Github Homepage" http-equiv="Content-Type" content="Aneesh Khunteta&#39;s Github Homepage">
+    <script src="./src/js/scramble.js"></script>
+    <script src="./src/js/toggleBlock.js"></script>
+</head>
+
+  <body>
+
+    <table width="840" border="0" align="center" cellspacing="0" cellpadding="20">
+      <tbody>
+        <tr>
+          <td>
+
+            <p align="center"><font size="7">Aneesh Khunteta</font><br>
+              <b>Email</b>:
+              <font id="email" style="display:inline;">neenlhtae@eeksgmtah.i <a href="#" onclick="emailScramble.initAnimatedBubbleSort();return false;">unscramble</a></font>
+              <script>
+              emailScramble = new scrambledString(document.getElementById('email'),
+                  'emailScramble', 'aneeshkhunteta@gmail.com',
+                  [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]);
+              </script>
+            </p>
+
+
+
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody>
+                <tr>
+                  <td width="67%" valign="middle" align="justify">
+                    <p class="acads">
+                      Hi, I am Aneesh Khunteta, Currently a fourth year student pursuing my B.Tech. in Computer Science from <a href="https://www.lnmiit.ac.in/" target="_blank">LNMIIT</a>, I have an ardent passion for
+                      programming and problem-solving. I am a passionate competitive programmer having various coding
+                      profiles, such as <a href="https://codeforces.com/profile/AI47" target="_blank" style="color: 	#008B8B; font-weight: bold; font-size: large;">Specialist</a> on Codeforces, <a href="https://leetcode.com/aneesh_47/" target="_blank" style="color: 	#32CD32; font-weight: bold; font-size: large;">Knight</a> on Leetcode and <a href="https://www.codechef.com/users/aneesh_47" target="_blank" style="color: #A020F0; font-weight: bold; font-size: large;">4 Star</a> on Codechef to name a few. I love
+                      cracking down on new problems that challenge my intellect. I have interest in Data Structures and
+                      Algorithms
+                    </p>
+                    <p class="acads">
+                      I love learning new algorithms and data structures and their applications to the real life scenerios. 
+                      I also like to develop new applications using my current knowledge and along with learning something new everyday. Recently, I have worked with MongoDB, Express, Node.js, React. I have also worked on natural language processing for my academic projects. I have also worked on <a href="https://github.com/glific/mobile/pull/79" target="_blank">open source</a> for very short period of time. 
+                    </p>
+                    <p class="acads">
+                      During the course of my current degree I have done many projects such as <a href="https://github.com/ANEESH-2003/Maintenance-Automation-system" target="_blank">Maintenance Automation System</a> for ISDL Course, <a href="https://github.com/ANEESH-2003/NLP-PROJECT-RANDOM_4" target="_blank">NLP Project</a> for NLP course, <a href="" >Gender identification through name</a> for IDS Course and I am Currently working on my B.Tech Project of identifying gender-pay gap in tech industries under supervision of <a href="https://www.lnmiit.ac.in/Employee_ProfileNew.aspx?nDeptID=iagmo" target="_blank">Dr. Payel Pal</a>.
+                    </p>
+                    <p class="extra hidden">
+                      I have plethora of active hobbies that keep me busy post my daily work. I indulge in activities that involve learning & creating and that help widening my skillset. So watching tv series / movies is something I try to avoid.
+                    </p>
+                    <p class="extra hidden">
+                      I enjoy playing variety of sports especially outdoors. I think I'm good at Cricket and football and complete novice at badminton. I also like to run regularly in the morning and meditate everyday. Apart from this I enjoy playing Video games in my free time.
+                    </p>
+                    <p class="extra hidden">
+                      I also enjoy to play guitar and sing. I love to hear new music and my favourite activity is to explore different genres of music. I also like to read books as I believe that life is too short to learn from your own experience and it is always good to learn from others experience too and books are the best way for this. My favourite book is Sherlock Holmes. 
+                    </p>
+                    
+                  </td>
+                  <td width="33%">
+                    <img class="acads" src="./src/images/dp1.jpeg" width="100%">
+                    <img class="extra hidden" src="./src/images/dp2.jpeg" width="100%">
+                    <p align="center" class="acads">
+                      <a href="./src/cv/cv.pdf" target="_blank">Resume</a> |
+                      <a href="https://github.com/ANEESH-2003" target="_blank">Github</a> |
+                      <a href="https://www.linkedin.com/in/aneesh-khunteta/" target="_blank"> LinkedIn </a> | 
+                      <a href="https://codeforces.com/profile/AI47" target="_blank">CodeForces</a> |
+                      <a href="https://leetcode.com/aneesh_47/" target="_blank">LeetCode</a> |
+                      <a href="https://www.codechef.com/users/aneesh_47" target="_blank">CodeChef</a> |
+                      <a href="https://atcoder.jp/users/AI47" target="_blank">AtCoder</a>
+                    </p>
+                    <p align="center" class="personal extra hidden">
+                      <a href="./src/images/guitar_degree.jpeg" target="_blank">Guitar</a>
+                      <!-- | <a href="">Singing</a> -->
+                    </p>
+                    <div style="display: inline-block;margin-left: 35px;">Extracurricular</div>
+                    <div class="tgl" height="10px" style="display: inline-block;margin-left: 6px;/* margin-top: 2px; */vertical-align: inherit;">
+                      <input type="checkbox" onchange='extracurricularClick(this);' id="toggle" style="/* display: inline-block; *//* margin-top: 40px; */">
+                      <label class="tggl" for="toggle" style="display: inline-block;/* margin-top: 2px; *//* padding-top: 19px; */"></label>
+                    </div>
+                  </td>
+              </tr>
+              </tbody>
+            </table>
+
+
+            <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr><td>
+                <sectionheading>Relevant Projects</sectionheading>
+              </td></tr></tbody>
+            </table>
+
+            <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/doc.jpg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <a href="https://github.com/ANEESH-2003/document-approval-tracker" target="_blank">
+                      <heading>Document Approval Tracker </heading>
+                    </a>
+                    <br>Aneesh Khunteta, Vatsal Mehta<i>(2023)</i><br>
+                    Made Using : MongoDB, Express, NextJS, Nodejs
+                    <br>
+                  </p>
+
+                  <div class="paper" id="largeScaleCuriosity2018">
+                    <a href="https://github.com/ANEESH-2003/document-approval-tracker" target="_blank">report</a> |
+                    <a href="./src/images/doc.jpg" target="_blank">poster</a> |
+                    <a href="javascript:toggleblock(&#39;abs&#39;)">description</a> |
+                    <a href="https://github.com/ANEESH-2003/document-approval-tracker" target="_blank">code</a>
+                    <br>
+                    <br>
+                    <p align="justify">
+                      <i id="abs" style="display: none;">
+                        1) This system help in posting application and attach its documents.<br>
+                        2) This lets the applicant to assign it to the concerned authorities.<br>
+                        3) It lets the user to either reject or accept an application and also attach supporting documents for the same.<br>
+                        4) It also have E-signature feature.<br>
+                        5) It has different levels of user which helps in division of data access<br>
+                      </i>
+                    </p>
+                  </div>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/feminism.jpg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <a href="./src/reports/BTP_PPT.pptx" target="_blank">
+                      <heading>B.Tech Project: South Asian Feminism</heading>
+                    </a>
+                    <br>Aneesh Khunteta, Mihir Mishra, Vinay Bhagwat<i>(2022-2023)</i><br>
+                    Advisor: Dr. Payel Pal
+                  </p>
+
+                  <div class="paper" id="largeScaleCuriosity2018">
+                    <a href="./src/reports/BTP_PPT.pptx" target="_blank">Presentation</a> |
+                    <a href="javascript:toggleblock(&#39;abs6&#39;)">description</a> 
+                    <br>
+                    <br>
+                    <p align="justify">
+                      <i id="abs6" style="display: none;">
+                        This is our B.Tech Project which is 2 semesters long in first half we studied how the ides of feminism has shaped in the course of time and how it has impacted in south asian region we also prepared a ppt for the same which explains our learnings. As a second part we are going to study the gender pay gap in the region and will analyze its impact on an individual from a particular industry.
+                      </i>
+                    </p>
+                  </div>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/pro.png" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <a href="./src/reports/comp_report.pdf" target="_blank">
+                      <heading>Maintenance Automation System  </heading>
+                    </a>
+                    <br>Aneesh Khunteta, Mihir Mishra, Vinay Bhagwat, Kustubh narwade<i>(2022)</i><br>
+                    Advisor: Prof. Vikas Bajpai
+                    <br>
+                  </p>
+
+                  <div class="paper" id="largeScaleCuriosity2018">
+                    <a href="./src/reports/comp_report.pdf" target="_blank">report</a> |
+                    <a href="./src/reports/comp_design.pdf" target="_blank">poster</a> |
+                    <a href="javascript:toggleblock(&#39;abs1&#39;)">description</a> |
+                    <a href="https://github.com/ANEESH-2003/Maintenance-Automation-system" target="_blank">code</a>
+                    <br>
+                    <br>
+                    <p align="justify">
+                      <i id="abs1" style="display: none;">
+                        1) This system is designed for LNMIIT campus complaints managaement.<br>
+                        2) It makes complaints filling, viewing and resolution transparent and
+                        effective.
+                        <br>
+                        3) It supports different user modules and allows data access with
+                        different priority.
+                        <br>
+                        4) supports complaints in different areas and different departments.<br>
+                      </i>
+                    </p>
+                  </div>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/nlp.jpg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <a href="./src/reports/nlp_report.pdf" target="_blank">
+                      <heading>POS Tagging of the book and its analysis</heading>
+                    </a>
+                    <br>Aneesh Khunteta, Vinay, Viraal, Chiroshree<i>(2022)</i><br>
+                    Advisor: Prof Sakthi Balan
+                    <br>
+                  </p>
+
+                  <div class="paper" id="largeScaleCuriosity2018">
+                    <a href="./src/reports/nlp_report.pdf" target="_blank">report</a> |
+                    <a href="javascript:toggleblock(&#39;abs2&#39;)">description</a> |
+                    <a href="https://github.com/ANEESH-2003/NLP-PROJECT-RANDOM_4" target="_blank">code</a>
+                    <br>
+                    <br>
+                    <p align="justify">
+                      <i id="abs2" style="display: none;">
+                        The aim of this part of the project is to obtain PoS tagging for a computer science
+                        book that we used in one of our courses.
+                      </i>
+                    </p>
+                  </div>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/gender.jpg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <a href="./src/reports/ids_report.pdf" target="_blank">
+                      <heading>Determining Gender By Name</heading>
+                    </a>
+                    <br>Aneesh Khunteta, Dhruv Sharma, Kumar Pratyush,Atul Ratnawat<i>(2022)</i><br>
+                    Advisor: Prof Sakthi Balan
+                  </p>
+
+                  <div class="paper" id="largeScaleCuriosity2018">
+                    <a href="./src/reports/ids_report.pdf" target="_blank">report</a> |
+                    <a href="javascript:toggleblock(&#39;abs3&#39;)">description</a> |
+                    <a href="https://archive.ics.uci.edu/ml/datasets/Gender+by+Name" target="_blank">Dataset</a>
+                    <br>
+                    <br>
+                    <p align="justify">
+                      <i id="abs3" style="display: none;">
+                        Large Internet companies no longer require gender information during account creation. However, predicting demographic data like gender and age remains a challenge, leading to unintentional gender and age bias in recommender systems. To address this, researchers investigated the difficulty of determining a user's gender based on their given name. After analyzing thousands of user names, they found that genders can be classified successfully using name compositions. Character-based machine learning models were developed, which significantly outperformed baseline methods in accurately determining user gender. Additionally, incorporating last names with first names further improved the classification performance.
+                      </i>
+                    </p>
+                  </div>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="acads" width="100%" align="center" border="0" cellpadding="20">
+              <tbody><tr><td>
+                <sectionheading>Awards and Achievements</sectionheading>
+                <ol>
+                  <li> 4 star rated with max rating of 1867</li>
+                  <li> Specialist rated with max rating of 1497</li>
+                  <li> Knight on Leetcode (max rating 1925 in top 3.93%)</li>
+                  <li> Contributed in glific project in C4GT program.</li>
+                  <li> Won Codechef August cook-off 2021 by global rank 145</li>
+                  <li> Got Global Rank of 307 in Codeforces Round 849</li>
+                  <li> Got Global Rank of 591 in Leetcode Biweekly 99</li>
+                  <li> Got Global Rank of 751 in Google kickstart 2022</li>
+                  <li> Got Global Rank of 661 in Codeforces Round 817</li>
+                  <li> Got Global Rank of 613 in Leetcode Biweekly 96</li>
+                </ol>
+              </td></tr></tbody>
+            </table>
+
+
+
+
+            <table class="acads" width="100%" align="center" border="0" cellpadding="20">
+              <tbody><tr><td>
+                <sectionheading>MOOCs & other courses</sectionheading>
+                <br> <br>
+                <subheading>Computer Science and Math</subheading>
+
+                <ul id="cscourses1">
+                  <li>Object-Oriented Data Structure in c++ from University of Illinois Urbana-Champaign<i>(Coursera June 2022)</i></li>
+                  <li>Greedy Algorithms, Minimum Spanning Trees, and
+                    Dynamic Programming from Stanford Universit<i>(Coursera May 2022)</i></li>
+                  <li>Divide and Conquer, Sorting and Searching, and
+                    Randomized Algorithms from Stanford University<i>(Coursera June 2022)</i></li>
+                  <li>Unordered Data Structures University of Illinois at Urbana-Champaign<i>(Coursera December 2022)</i></li>
+                  <li>Mathematics for Machine Learning: PCA Imperial College London<i>(Coursera January 2023)</i></li>
+                  <li>Mathematics for Machine Learning: Multivariate Calculus Imperial College London<i>(Coursera December 2022)</i></li>
+                  <li>Mathematics for Machine Learning: Linear Algebra Imperial College London<i>(Coursera January 2023)</i></li>
+
+                </ul>
+                <br> 
+              </td></tr></tbody>
+            </table>
+
+            <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr><td>
+                <sectionheading>Extracurricular activities / Hobbies</sectionheading>
+              </td></tr></tbody>
+            </table>
+
+            <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/football.jpeg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <heading>Football</heading>
+                    <br>I love to play and watch Football. I have participated in many Intra-college Tournaments I play as a Midfielder. My favourite Midfielder is Luca Modric but my Favourite Team is Barcelona. 
+                    <br>
+                    Here is a Picture of me and my team while we terribly Lost by 4:0 in an Intra-College Match (2 of them were own goals). 
+                  </p>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/cat.jpg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <heading>Photography</heading>
+                    <br>I like to do photography. Whenever I feel free I start clicking random photos. I never thought of buying a Camera as i think i am not that good to be able to use one.
+                    <br>
+                  </p>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/book.jpg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <heading>Reading</heading>
+                    <br>Whenever I get time and I'm not sleepy at night, I try to pick up a book and read. I'm trying to not just read books but also to understand and apply the ideas within, so I read at very slow pace. I'm trying to avoid fictions (they're being made into movies anyways).
+                    <br>
+                  </p>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/guitar.jpeg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <heading>Music (Guitar)</heading>
+                    <br>In 9th standard I learnt music. I can read sheet music and can differentiate between major third, perfect fifth and octaves just by listening. As for instruments, I started with guitar and i play wide range of songs. I have a degree in acoustic guitar playing from University of West London.
+                    <br>
+                  </p>
+                  <p><a href="./src/images/guitar_degree.jpeg" target="_blank">Degree</a>
+                </td>
+              </tr></tbody>
+            </table>
+
+            <table class="extra hidden" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/mic.jpg" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <heading>Singing</heading>
+                    <br>I love to sing and i have been learning singing from 8th standard. I also have a degree from jaipur music academy.
+                    <br>
+                  </p>
+                  <!-- <p><a href="./src/images/guitar_degree.jpeg" target="_blank">Degree</a> -->
+                </td>
+              </tr></tbody>
+            </table>
+</body></html>
