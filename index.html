@@ -55,6 +55,20 @@
           height: inherit;
           display: none;
       }
+      .button {
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 10px;
+      }
+      .green {
+        background-color: green;
+      }
+      .red {
+        background-color: 90EE90;
+      }
       label.tggl {
           box-sizing: border-box;
           display: flex;
@@ -121,6 +135,7 @@
     <meta name="Aneesh Khunteta&#39;s Github Homepage" http-equiv="Content-Type" content="Aneesh Khunteta&#39;s Github Homepage">
     <script src="./src/js/scramble.js"></script>
     <script src="./src/js/toggleBlock.js"></script>
+    <script src="./src/js/copy.js"></script>
 </head>
 
   <body>
@@ -129,8 +144,8 @@
       <tbody>
         <tr>
           <td>
-
             <p align="center"><font size="7">Aneesh Khunteta</font><br>
+              <button id="copy-btn" class="button green" onclick="copyText()">Copy Email</button>
               <b>Email</b>:
               <font id="email" style="display:inline;">neenlhtae@eeksgmtah.i <a href="#" onclick="emailScramble.initAnimatedBubbleSort();return false;">unscramble</a></font>
               <script>
@@ -139,8 +154,6 @@
                   [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24]);
               </script>
             </p>
-
-
 
             <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody>
@@ -154,12 +167,18 @@
                       Algorithms
                     </p>
                     <p class="acads">
-                      I love learning new algorithms and data structures and their applications to the real life scenerios. 
-                      I also like to develop new applications using my current knowledge and along with learning something new everyday. Recently, I have worked with MongoDB, Express, Node.js, React. I have also worked on natural language processing for my academic projects. I have also worked on <a href="https://github.com/glific/mobile/pull/79" target="_blank">open source</a> for very short period of time. 
+                      I am presently employed as a Fullstack Engineer Intern at <a href="https://whatfix.com/" target="_blank"><img src="./src/images/wfx_logo.png" width="15%" height="5%"></a> During my tenure, I have cultivated proficiency in an 
+                      array of programming languages and tools, including JAVA, GWT, React, Jenkins, Ansible, Kotlin, Cassandra, and Clickhouse. 
+                      This experience has afforded me the opportunity to adeptly navigate agile environments, emphasizing collaborative 
+                      teamwork over individual pursuits.
                     </p>
                     <p class="acads">
-                      During the course of my current degree I have done many projects such as <a href="https://github.com/ANEESH-2003/Maintenance-Automation-system" target="_blank">Maintenance Automation System</a> for ISDL Course, <a href="https://github.com/ANEESH-2003/NLP-PROJECT-RANDOM_4" target="_blank">NLP Project</a> for NLP course, <a href="" >Gender identification through name</a> for IDS Course and I am Currently working on my B.Tech Project of identifying gender-pay gap in tech industries under supervision of <a href="https://www.lnmiit.ac.in/Employee_ProfileNew.aspx?nDeptID=iagmo" target="_blank">Dr. Payel Pal</a>.
+                      I love learning new algorithms and data structures and their applications to the real life scenerios. 
+                      I also like to develop new applications using my current knowledge and along with learning something new everyday. Recently, I have worked with MongoDB, Express, Node.js, React. 
                     </p>
+                    <!-- <p class="acads">
+                      During the course of my current degree I have done many projects such as <a href="https://github.com/ANEESH-2003/Maintenance-Automation-system" target="_blank">Maintenance Automation System</a> for ISDL Course, <a href="https://github.com/ANEESH-2003/NLP-PROJECT-RANDOM_4" target="_blank">NLP Project</a> for NLP course, <a href="" >Gender identification through name</a> for IDS Course and I am Currently working on my B.Tech Project of identifying gender-pay gap in tech industries under supervision of <a href="https://www.lnmiit.ac.in/Employee_ProfileNew.aspx?nDeptID=iagmo" target="_blank">Dr. Payel Pal</a>.
+                    </p> -->
                     <p class="extra hidden">
                       I have plethora of active hobbies that keep me busy post my daily work. I indulge in activities that involve learning & creating and that help widening my skillset. So watching tv series / movies is something I try to avoid.
                     </p>
@@ -197,6 +216,29 @@
               </tbody>
             </table>
 
+            <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr><td>
+                <sectionheading>Experience</sectionheading>
+              </td></tr></tbody>
+            </table>
+
+            <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tbody><tr>
+                <td width="33%" valign="top" align="center">
+                  <img src="./src/images/Wfx_logo.png" alt="sym" width="100%" style="border-style: none">
+                </td>
+                <td width="67%" valign="top">
+                  <p>
+                    <a href="https://whatfix.com/" target="_blank">
+                      <heading>Whatfix</heading>
+                    </a>
+                    <br>Fullstack Engineer Intern <i>(01/2024 - present)</i><br>
+                    <br>
+                  </p>
+
+                </td>
+              </tr></tbody>
+            </table>
 
             <table class="acads" width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
               <tbody><tr><td>
@@ -220,9 +262,9 @@
                   </p>
 
                   <div class="paper" id="largeScaleCuriosity2018">
+                    <a href="javascript:toggleblock(&#39;abs&#39;)">description</a> | 
                     <a href="https://github.com/ANEESH-2003/document-approval-tracker" target="_blank">report</a> |
                     <a href="./src/images/doc.jpg" target="_blank">poster</a> |
-                    <a href="javascript:toggleblock(&#39;abs&#39;)">description</a> |
                     <a href="https://github.com/ANEESH-2003/document-approval-tracker" target="_blank">code</a>
                     <br>
                     <br>
@@ -255,8 +297,10 @@
                   </p>
 
                   <div class="paper" id="largeScaleCuriosity2018">
-                    <a href="./src/reports/BTP_PPT.pptx" target="_blank">Presentation</a> |
-                    <a href="javascript:toggleblock(&#39;abs6&#39;)">description</a> 
+                    <a href="javascript:toggleblock(&#39;abs6&#39;)">description</a> |
+                    <a href="./src/reports/BTP_PPT_1.pptx" target="_blank">Presentation I</a> |
+                    <a href="./src/reports/BTP_PPT_2.pdf" target="_blank">Presentation II</a> |
+                    <a href="./src/reports/BTP_Report.pdf" target="_blank">Report</a>
                     <br>
                     <br>
                     <p align="justify">
@@ -285,9 +329,9 @@
                   </p>
 
                   <div class="paper" id="largeScaleCuriosity2018">
+                    <a href="javascript:toggleblock(&#39;abs1&#39;)">description</a> |
                     <a href="./src/reports/comp_report.pdf" target="_blank">report</a> |
                     <a href="./src/reports/comp_design.pdf" target="_blank">poster</a> |
-                    <a href="javascript:toggleblock(&#39;abs1&#39;)">description</a> |
                     <a href="https://github.com/ANEESH-2003/Maintenance-Automation-system" target="_blank">code</a>
                     <br>
                     <br>
@@ -324,8 +368,8 @@
                   </p>
 
                   <div class="paper" id="largeScaleCuriosity2018">
-                    <a href="./src/reports/nlp_report.pdf" target="_blank">report</a> |
                     <a href="javascript:toggleblock(&#39;abs2&#39;)">description</a> |
+                    <a href="./src/reports/nlp_report.pdf" target="_blank">report</a> |
                     <a href="https://github.com/ANEESH-2003/NLP-PROJECT-RANDOM_4" target="_blank">code</a>
                     <br>
                     <br>
@@ -355,8 +399,8 @@
                   </p>
 
                   <div class="paper" id="largeScaleCuriosity2018">
-                    <a href="./src/reports/ids_report.pdf" target="_blank">report</a> |
                     <a href="javascript:toggleblock(&#39;abs3&#39;)">description</a> |
+                    <a href="./src/reports/ids_report.pdf" target="_blank">report</a> |
                     <a href="https://archive.ics.uci.edu/ml/datasets/Gender+by+Name" target="_blank">Dataset</a>
                     <br>
                     <br>
