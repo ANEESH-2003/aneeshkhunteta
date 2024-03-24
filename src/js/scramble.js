@@ -1,7 +1,3 @@
-// scramble.js
-//
-// 2011, Jeff Donahue (http://jeffdonahue.com/).
-// license: you can use this if you want to i guess
 
 function scrambledString(tag, objName, initScrambledString, initScrambledStringIndices) {
 	this.tag = tag;
